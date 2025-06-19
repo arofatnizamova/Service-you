@@ -1,0 +1,12 @@
+.fs-title{
+    font-size: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
+}
+.fs-paragraph{
+    font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+}
+.fs-paragraph-2{
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+}
+.fs-span{
+    font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+}

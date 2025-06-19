@@ -4,24 +4,71 @@
 
 :root{
     --font-family-main: 'Domotika Trial', sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
     --color-gray: #989898;
+    --color-light-gray: #6B7280;
     --color-dark-gray: #485169;
+    --color-corp: #0C477B;
 }
 
 body{
     font-family: var(--font-family-main);
+    color: #191919;
+}
+.ff-secondary{
+    font-family: var(--font-family-secondary);
 }
 a{
     text-decoration: none;
     color: inherit;
 }
+
 .text-gray{
     color: var(--color-gray);
+}
+.text-light-gray{
+    color: var(--color-light-gray);
 }
 .text-dark-gray{
     color: var(--color-dark-gray);
 }
-
+.text-corp{
+    color: var(--color-corp);
+}
+.btn{
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    padding: 15px 25px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+.btn-corp{
+    background: var(--color-corp);
+    color: white;
+}
+.btn-corp:hover{
+    background: white;
+    color: var(--color-corp);
+    outline: 1px solid var(--color-corp);
+    transform: translate(-4px, -4px);
+}
+.btn-transparent{
+    color: var(--color-corp);
+    outline: 1px solid var(--color-corp);
+}
+.btn-transparent:hover{
+    transform: translate(-4px, -4px);
+    background: var(--color-corp);
+    color: white;
+}
+.btn-width{
+    width: 48%;
+}
+.line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .navbar-toggler-icon {
     background-image: url('../icons/burger.svg');
@@ -66,11 +113,48 @@ a{
 header{
     border-bottom: 0.5px solid #9ca3af69;
 }
-
-
+.underline-link{
+    transition: all 0.3s ease;
+}
+.underline-link:hover{
+    text-decoration: underline;
+}
+.pagination {
+    font-family: var(--font-family-secondary);
+    --bs-pagination-font-size: 1.2rem;
+    --bs-pagination-focus-box-shadow: none;
+    border: none;
+    --bs-pagination-border-color: unset;
+    --bs-pagination-color: black;
+    --bs-pagination-active-color: black;
+    --bs-pagination-active-bg: unset;
+    --bs-pagination-padding-x: 1rem;
+}
+.page-item.active{
+    position: relative;
+}
+.page-item.active::after{
+    position: absolute;
+    height: 6px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-corp);
+    content: '';
+    border-radius: 10px;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
+    }
+    .btn{
+        padding: 15px 15px;
+    }   
+}
+
+@media (max-width: 992px){
+    .btn-width{
+        width: 100%;
     }
 }
 @media (max-width: 576px){
