@@ -60,6 +60,13 @@ a{
     background: var(--color-corp);
     color: white;
 }
+.btn-white{
+    background: white;
+    color: var(--color-corp);
+}
+.btn-white:hover{
+    outline: 1px solid white;
+}
 .btn-width{
     width: 48%;
 }
