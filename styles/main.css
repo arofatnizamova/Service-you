@@ -41,6 +41,9 @@ a{
     border-radius: 0;
     transition: all 0.3s ease;
 }
+.btn:hover{
+    transform: translate(-4px, -4px);
+}
 .btn-corp{
     background: var(--color-corp);
     color: white;
@@ -49,14 +52,12 @@ a{
     background: white;
     color: var(--color-corp);
     outline: 1px solid var(--color-corp);
-    transform: translate(-4px, -4px);
 }
 .btn-transparent{
     color: var(--color-corp);
     outline: 1px solid var(--color-corp);
 }
 .btn-transparent:hover{
-    transform: translate(-4px, -4px);
     background: var(--color-corp);
     color: white;
 }
@@ -150,6 +151,9 @@ header{
     content: '';
     border-radius: 10px;
 }
+.box-info-position-status{
+    position: absolute;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
@@ -162,6 +166,15 @@ header{
 @media (max-width: 992px){
     .btn-width{
         width: 100%;
+    }
+    .box-info-position-status{
+        position: static;
+    }
+    .img-position-status{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
     }
 }
 @media (max-width: 576px){
