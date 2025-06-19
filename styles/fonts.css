@@ -1,0 +1,43 @@
+/*Domotica-trial*/
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-thin-trial.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-light-trial.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-regular-trial.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-medium-trial.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-bold-trial.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domotika Trial';
+  src: url('../fonts/domotika-trial/domotika-black-trial.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

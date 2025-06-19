@@ -1,0 +1,98 @@
+@import url('fonts.css');
+@import url('typography.css');
+
+
+:root{
+    --font-family-main: 'Domotika Trial', sans-serif;
+    --color-gray: #989898;
+    --color-dark-gray: #485169;
+}
+
+body{
+    font-family: var(--font-family-main);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.text-gray{
+    color: var(--color-gray);
+}
+.text-dark-gray{
+    color: var(--color-dark-gray);
+}
+
+
+.navbar-toggler-icon {
+    background-image: url('../icons/burger.svg');
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler{
+    border: none;
+}
+.rounded-flag{
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.dropdown-toggle::after {
+    border: none;
+    content: "\F282";
+    font-family: 'bootstrap-icons';
+    font-size: 0.9rem;
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+.icons-circle{
+    padding: 3px 5px;
+    border: 1px solid var(--color-gray);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.icon-social{
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: unset;
+}
+header{
+    border-bottom: 0.5px solid #9ca3af69;
+}
+
+
+@media (max-width: 1650px){
+    .logo-xl{
+        width: 200px;
+    }
+}
+@media (max-width: 576px){
+    .logo{
+        width: 120px;
+    }
+}
+@media (max-width: 400px){
+    .logo{
+        width: 80px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+    }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1792px) {
+  .container {
+    max-width: 1792px;
+  }
+}
