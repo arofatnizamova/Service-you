@@ -44,6 +44,9 @@ a{
 .bg-corp{
     background: var(--color-corp);
 }
+.bg-dark-gray{
+    background: #F3F4F6;
+}
 .btn{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     padding: 15px 25px;
@@ -263,6 +266,11 @@ header{
     top: 70%;
     right: -40px;
 }
+.frame-info-box{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
@@ -295,6 +303,11 @@ header{
     .logo-footer{
         width: 170px;
     }
+    .frame-info-box{
+        position: static;
+        bottom: 0;
+        right: 0;
+    }
 }
 @media (max-width: 768px){
     .card-h{
@@ -325,6 +338,9 @@ header{
     }
     .industries-slider-item{
         height: 200px;
+    }
+    .h-sm-300{
+        height: 300px;
     }
 }
 @media (max-width: 400px){
