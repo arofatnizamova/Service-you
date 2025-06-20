@@ -41,6 +41,9 @@ a{
 .w-fit-content{
     width: fit-content;
 }
+.bg-corp{
+    background: var(--color-corp);
+}
 .btn{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     padding: 15px 25px;
@@ -208,6 +211,52 @@ header{
     transform: translateY(-50%);
     left: 0;
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.brand {
+    background: #D4D4D8;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.connector-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 30px;
+    height: 1px;
+    background: #6B7280;
+}
+
+.connector-down::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    background: #6B7280;
+}
+
+.connector-diagonal::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #6B7280;
+    transform: rotate(-45deg);
+    top: 70%;
+    right: -40px;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
@@ -237,12 +286,30 @@ header{
         left: unset;
         margin-bottom: -40%;
     }
+    .logo-footer{
+        width: 170px;
+    }
 }
 @media (max-width: 768px){
     .card-h{
         min-height: unset;
     }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .brand { 
+        grid-area: auto !important; 
+    }
+    .connector-right::after,
+    .connector-down::before,
+    .connector-diagonal::after {
+        display: none;
+    }
+    .grid {
+        gap: 10px;
+    }
 }
+      
 @media (max-width: 576px){
     .logo{
         width: 120px;
