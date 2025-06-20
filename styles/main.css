@@ -86,6 +86,12 @@ a{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.line-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .navbar-toggler-icon {
     background-image: url('../icons/burger.svg');
