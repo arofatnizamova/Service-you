@@ -35,6 +35,9 @@ a{
 .text-corp{
     color: var(--color-corp);
 }
+.text-balance{
+    text-wrap: balance;
+}
 .btn{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     padding: 15px 25px;
@@ -171,6 +174,18 @@ header{
 .slick-dots li {
     margin: 0px;
 }
+.card-h{
+    min-height: 650px;
+}
+.btn-left-card, .btn-right-card{
+    top: 0;
+}
+.btn-left-card{
+    right: 5%;
+}
+.btn-right-card{
+    right: 0;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
@@ -192,6 +207,11 @@ header{
         top: 0;
         left: 0;
         height: 100%;
+    }
+}
+@media (max-width: 768px){
+    .card-h{
+        min-height: unset;
     }
 }
 @media (max-width: 576px){
