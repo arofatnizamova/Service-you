@@ -47,6 +47,9 @@ a{
 .bg-dark-gray{
     background: #F3F4F6;
 }
+.bg-smoke{
+    background: #D9D9D9;
+}
 .btn{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     padding: 15px 25px;
@@ -271,6 +274,21 @@ header{
     bottom: 0;
     right: 0;
 }
+.hover-border-left{
+    transition: all 0.3s ease;
+}
+.hover-border-left:hover{
+    border-left: 4px solid var(--color-corp);
+    padding-left: 20px;
+}
+.form-control{
+    border-radius: 0;
+    padding: 16px;
+}
+.form-control::placeholder{
+    color: #94A3B8;
+    font-weight: 300;
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
@@ -341,6 +359,10 @@ header{
     }
     .h-sm-300{
         height: 300px;
+    }
+    .form-control{
+        border-radius: 0;
+        padding: 10px;
     }
 }
 @media (max-width: 400px){
