@@ -6,6 +6,7 @@
     --font-family-main: 'Domotika Trial', sans-serif;
     --font-family-secondary: 'Roboto', sans-serif;
     --color-gray: #989898;
+    --color-gray-2: #4B5563;
     --color-light-gray: #6B7280;
     --color-dark-gray: #485169;
     --color-corp: #0C477B;
@@ -25,6 +26,9 @@ a{
 
 .text-gray{
     color: var(--color-gray);
+}
+.text-gray-2{
+    color: var(--color-gray-2);
 }
 .text-light-gray{
     color: var(--color-light-gray);
@@ -85,6 +89,12 @@ a{
 }
 .btn-width{
     width: 48%;
+}
+.line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .line-3 {
   display: -webkit-box;
@@ -288,6 +298,20 @@ header{
 .form-control::placeholder{
     color: #94A3B8;
     font-weight: 300;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #191919;
+    font-weight: normal;
+    background-color: unset;
+    text-align: left;
+    border-color: var(--color-corp);
+}
+.nav-pills .nav-link{
+    color: #191919;
+    font-weight: 300;
+    text-align: left;
+    border-left: 6px solid #E5E7EB;
+    border-radius: 0;
 }
 @media (max-width: 1650px){
     .logo-xl{
