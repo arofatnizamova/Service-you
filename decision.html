@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service You</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/logo-xl.svg" alt="" class="d-xl-inline-block d-none logo-xl">
+                    <img src="icons/logo.svg" alt="" class="d-xl-none d-xl-inline-block logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
+                    <a href="#" class="d-flex align-items-center">
+                        <span class="fi fi-kz rounded-1 fs-5 me-1"></span>
+                        <span>SY</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
+                    </a>
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2 mb-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                 <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="decision.html">Решения</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cases.html">Кейсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">События</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainig-center.html">Учебный центр</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="d-xl-flex d-none align-items-center">
+                        <span class="fi fi-kz rounded-1 fs-5 me-1"></span>
+                        <span>SY в Казахстане</span>
+                    </a>
+                    <a href="#" class="d-xl-block d-none">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-5 pt-1"></i>
+                    </a>
+                    <ul class="list-unstyled d-xxl-flex d-none gap-4 text-gray mb-0 fs-6">
+                        <li>
+                            <a href="#" class="icons-circle d-block position-relative">
+                                <i class="bi bi-facebook icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-block position-relative">
+                                <i class="bi bi-instagram icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-block position-relative">
+                                <i class="bi bi-twitter icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-circle d-block position-relative">
+                                <i class="bi bi-youtube icon-social position-absolute"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-xl-block d-none">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="rounded-flag overflow-hidden me-2 mb-2"><span class="fi fi-ru fs-5"></span></span> RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-lg-4 py-3">
+            <div class="container">
+                <ul class="list-unstyled d-flex flex-wrap fs-paragraph-2 gap-lg-5 gap-3 fw-light">
+                    <li class="pb-1 page-current-active"><a href="decision.html">Програмное обеспечение</a></li>
+                    <li class="pb-1 "><a href="equipment.html">Оборудование</a></li>
+                    <li class="pb-1 "><a href="cad.html">Решения по САПР</a></li>
+                    <li class="pb-1 "><a href="cloud-services.html">Облачные сервисы</a></li>
+                </ul>
+                <div class="pb-lg-5 pb-3 border-bottom">
+                    <div class="row  gx-0">
+                        <div class="col-lg-9">
+                            <div class="position-relative h-100 w-100">
+                                <img src="images/softvare/frame-img.png" alt="" class="img-fluid object-fit-cover w-100 h-lg-100 h-sm-300">
+                                <div class="position-absolute top-0 left-0 w-100">
+                                    <div class="container">
+                                        <h3 class="fw-light fs-title lh-sm mt-lg-5 mt-3 text-uppercase">Программное <br> Обеспечение</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100 border-top border-bottom h-100">
+                                <div class="border-bottom border-top h-50 ps-lg-4 pt-3">
+                                    <a href="#" class="underline-link lh-sm fs-paragraph">Вендор
+                                    </a>
+                                    <span class="fs-span  ff-secondary fw-normal d-block text-light-gray mb-4">Компания поставщика</span>
+                                    <img src="icons/software/1.svg" alt="" class="my-4">
+                                    <a href="#" class="fs-paragraph-2 text-decoration-underline d-flex text-corp justify-content-between fw-light align-items-center w-100" tabindex="0">
+                                        Выбрать направление <i class="bi bi-arrow-right-short fs-2"></i>
+                                    </a>
+                                </div>
+                                <div class="border-bottom border-top h-50 ps-lg-4 pt-3">
+                                    <a href="#" class="underline-link lh-sm fs-paragraph">Направление
+                                    </a>
+                                    <span class="fs-span  ff-secondary fw-normal d-block text-light-gray mb-4">Програмное обеспечение по классификации</span>
+                                    <img src="icons/software/2.svg" alt="" class="my-4">
+                                    <a href="#" class="fs-paragraph-2 text-decoration-underline d-flex text-corp justify-content-between fw-light align-items-center w-100" tabindex="0">
+                                        Выбрать направление <i class="bi bi-arrow-right-short fs-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-lg-5 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="fs-paragraph lh-sm">
+                            <h6 class="fs-title-3 text-uppercase fw-normal">В каких отраслях можем быть полезны</h6>
+                            <p class="fw-light">Наши услуги варьируются, чтобы удовлетворить потребности бизнеса компаний из многих отраслей и разных размеров.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative py-5">
+                    <div class="slick-slider industries">
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/1.svg" alt="">
+                                <a href="#" class="fs-paragraph d-flex justify-content-between fw-light align-items-center w-100">
+                                    Государственный сектор <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/2.svg" alt="">
+                                <a href="#" class="fs-paragraph d-flex justify-content-between fw-light align-items-center w-100">
+                                    Финансовый сектор <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/3.svg" alt="">
+                                <a href="#" class="fs-paragraph d-flex justify-content-between fw-light align-items-center w-100">
+                                    Промышленные предприятия <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-item px-sm-0 px-1">
+                            <div class="industries-slider-item d-flex flex-column align-items-start justify-content-between">
+                                <img src="icons/slider-icons-main-page/4.svg" alt="">
+                                <a href="#" class="fs-paragraph d-flex justify-content-between fw-light align-items-center w-100">
+                                    Телеком <i class="bi bi-arrow-right-short fs-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h5 class="fw-medium fs-paragraph mb-lg-5 mb-3">Вам будет интересно узнать</h5>
+                <div class="row row-cols-xxl-4 row-cols-md-2 row-cols-1 gy-3 gx-0">
+                    <div class="col">
+                        <div class="w-100 h-100 fs-paragraph-2 p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="fs-span text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 fs-paragraph-2 p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="fs-span text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">Портфель CROSS-CLOUD SERVICES от VMWARE</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 fs-paragraph-2 p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="fs-span text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">Гк service you приглашает вас в совместный вебинар с айдеко!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-100 fs-paragraph-2 p-3 border fw-light lh-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="images/home-page/cards/4.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <p class="fs-span text-dark-gray">
+                                            Исследования
+                                        </p>
+                                        <a href="#" class="underline-link line-4">К нам идет ZWCAD – эффективный, дружелюбный и надежный вендор!</a>
+                                        <i class="bi bi-arrow-right-short fs-3 d-block mt-auto text-corp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 bg-corp text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2">
+                    <img src="icons/logo-footer.svg" alt="" class="img-fluid logo-footer">
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light fs-paragraph-2">
+                        <div>
+                            <p class="text-uppercase">О нас</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Учебный центр
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light fs-paragraph-2">
+                        <div>
+                            <p class="text-uppercase">Категории</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Программное Обеспечение
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Оборудование
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light fs-paragraph-2">
+                        <div>
+                            <p class="text-uppercase">Новости</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Новые решения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light fs-paragraph-2">
+                        <div>
+                            <p class="text-uppercase">Связатся с нами</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        E-mail : <span class="ff-secondary fw-normal">info@serviceyou.uz</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Телефон : <span class="ff-secondary fw-normal">+998712007744</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
