@@ -313,6 +313,18 @@ header{
     border-left: 6px solid #E5E7EB;
     border-radius: 0;
 }
+.breadcrumb-item{
+    font-weight: 300;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 1rem;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 1rem;
+}
+.breadcrumb-item.active {
+    color: var(--color-corp);
+}
 @media (max-width: 1650px){
     .logo-xl{
         width: 200px;
